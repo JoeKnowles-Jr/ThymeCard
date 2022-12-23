@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ThymeCard</string>
+    <string name="floating_action_button">floating action button</string>
+    <string name="time_in">Time In</string>
+    <string name="time_out">Time Out</string>
+    <string name="miles_out">Miles Out</string>
+    <string name="miles_in">Miles In</string>
+    <string name="initial_stops">Initial Stops</string>
+    <string name="actual_stops">Actual Stops</string>
+    <string name="initial_pkgs">Initial Pkgs</string>
+    <string name="actual_pkgs">Actual Pkgs</string>
+    <string name="hours">Hours</string>
+    <string name="miles">Miles</string>
+    <string name="pay">Pay</string>
+    <string name="submit">Submit</string>
+    <string name="calendar">Calendar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="week">Week</string>
+</resources>

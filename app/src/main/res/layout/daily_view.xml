@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="3dp"
+    android:orientation="vertical"
+    android:background="@drawable/border_2_black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="#aaa"
+        android:padding="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentStart="true"
+            android:id="@+id/tv_date"
+            android:textSize="13sp"
+            tools:text="12-26-1970"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:id="@+id/tv_total_pay"
+            android:textSize="13sp"
+            tools:text="$222.69"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/time_miles"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="17dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/time_in_label"
+                android:text="@string/time_in"
+                android:textSize="12sp"
+                android:textFontWeight="@integer/material_motion_duration_short_2"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:targetApi="p" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_time_in"
+                android:layout_gravity="center"
+                tools:text="12:59"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="17dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/time_out_label"
+                android:text="@string/time_out"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_time_out"
+                android:layout_gravity="center"
+                tools:text="12:59"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="17dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/miles_in_label"
+                android:text="@string/miles_in"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_miles_in"
+                android:layout_gravity="center"
+                tools:text="98,269"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="17dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/miles_out_label"
+                android:text="@string/miles_out"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_miles_out"
+                android:layout_gravity="center"
+                tools:text="99,420"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/time_miles"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="17dp">
+
+            <TextView
+                android:id="@+id/hours_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/hours"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_hours"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                tools:ignore="RelativeOverlap"
+                tools:text="8:15" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="17dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/hours_pay_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/pay" />
+
+            <TextView
+                android:id="@+id/tv_hours_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                tools:ignore="RelativeOverlap"
+                tools:text="$200.00" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="17dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/miles_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/miles" />
+
+            <TextView
+                android:id="@+id/tv_miles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                tools:ignore="RelativeOverlap"
+                tools:text="47" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingHorizontal="17dp">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/miles_pay_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/pay" />
+
+            <TextView
+                android:id="@+id/tv_miles_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                tools:ignore="RelativeOverlap"
+                tools:text="$32" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/stops_pkgs"
+        android:layout_below="@id/pay"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="7dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/initial_stops_label"
+                android:text="@string/initial_stops"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_initial_stops"
+                android:layout_gravity="center"
+                tools:text="127"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="7dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/actual_stops_label"
+                android:text="@string/actual_stops"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_actual_stops"
+                android:layout_gravity="center"
+                tools:text="117"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="7dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/initial_packages_label"
+                android:text="@string/initial_pkgs"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_initial_packages"
+                android:layout_gravity="center"
+                tools:text="259"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:paddingHorizontal="7dp"
+            android:background="@drawable/border_1_black"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="12sp"
+                android:id="@+id/actual_packages_label"
+                android:text="@string/actual_pkgs"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="17sp"
+                android:id="@+id/tv_actual_packages"
+                android:layout_gravity="center"
+                tools:text="237"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
